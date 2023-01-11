@@ -14,3 +14,12 @@ function genCode() {
 }
 
 var passcode = genCode();
+
+function checkCode {
+  var guessCode = prompt('Paste in the code:');
+  if (guessCode == passcode) { 
+    alert('You\'re in.'); 
+    window.location.href = 'main.html';
+  } else { 
+    alert('Wrong code. Try again.') }
+}
