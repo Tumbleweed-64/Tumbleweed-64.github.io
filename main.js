@@ -1,5 +1,5 @@
 function getSelectVal() {
-  var cloakOps = document.getElementbyId("cloakOps");
+  var cloakOps = document.getElementById("cloakOps");
   var titleElem = document.getElementById("titleElem");
   var fav = document.getElementById("fav")
   if (cloakOps.value === "clever") {
