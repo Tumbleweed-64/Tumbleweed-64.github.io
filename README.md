@@ -10,7 +10,7 @@ It has everything you need to not be productive, including:
 
 In order to decrease spreading and eventual blocking, I've added some security on it, like:  
 
-- Hourly-changing 20-digit alphanumeric code to get in
+- Random 20-digit alphanumeric code to get in
 - Tab cloaking (on dropdown select at top of page)
 - Variables making sure the new code wasn't already used
 
