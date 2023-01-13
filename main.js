@@ -9,7 +9,7 @@ function getSelectVal() {
     fav.setAttribute("href", "schoology-fav.ico");
     titleElem.innerHTML = "Home | Schoology";
   } else if (cloakOps.value === "default") {
-    fav.setAtrribute("href", "main.ico")
+    fav.setAttribute("href", "main.ico")
     titleElem.innerHTML = "Tumbleweed64/Main"
   }
 }
