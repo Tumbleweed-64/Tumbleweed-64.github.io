@@ -3,10 +3,13 @@ function getSelectVal() {
   var titleElem = document.getElementById("titleElem");
   var fav = document.getElementById("fav")
   if (cloakOps.value === "clever") {
-      fav.setAttribute("src", "clever-fav.ico");
+      fav.setAttribute("href", "clever-fav.ico");
       titleElem.innerHTML = "Clever | Portal";
   } else if (cloakOps.value === "schoology") {
-    fav.setAttribute("src", "schoology-fav.ico");
+    fav.setAttribute("href", "schoology-fav.ico");
     titleElem.innerHTML = "Home | Schoology";
+  } else if (cloakOps.value === "default") {
+    fav.setAtrribute("href", "main.ico")
+    titleElem.innerHTML = "Tumbleweed64/Main"
   }
 }
