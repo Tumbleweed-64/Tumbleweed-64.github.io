@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <title>YouTube Unblocker</title>
+  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+  <style>
+    body {
+text-align: center;
+background-color: LightSteelBlue;
+}
+
+h1 {
+  font-family: Kanit, sans-serif;
+}
+  </style>
+  <script>
+    function linkgen() {
+var og_url= prompt("Paste in your link here.");
+og_url = og_url.replace("https://www.youtube.com/watch?v=", "");
+var newlink = "https://www.youtube-nocookie.com/embed/" + og_url;
+var fs = document.getElementById("fs")
+var player = document.getElementById("player");
+fs.setAttribute("href", newlink)
+fs.setAttribute("target", "_blank")
+player.setAttribute("src", newlink);
+}
+  </script>
+</head>
+<body>
+<h1>Generate Link</h1>
+<abbr title="Find the video link you want unblocked, copy it, then press the button. The program will do the rest for you.">How do I use?</abbr>
+<hr>
+  <p>Note: some music videos may not work.</p>
+<button onclick="linkgen()">Watch</button>
+<hr>
+<h1>Output</h1>
+<br>
+<a id="fs" href="javascript:void(0)">Watch in Fullscreen</a>
+<br>
+<iframe id="player" height="360" width="640"></iframe>
+<br>
+<hr>
+<p>Some other great sites:</p>
+<a href="https://video.link" target="_blank">video.link</a>
+<br>
+<a href="https://www.google.com/videohp" target="_blank">Google Videos</a>
+</body>
+</html>
