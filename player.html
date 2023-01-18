@@ -17,9 +17,9 @@
       function sizeHandler(type) {
         var width = window.innerWidth - 5;
         var height = window.innerHeight - 25;
-        if (type === "width") {
+        if (type == "width") {
           return width;
-        } else if (type === "height") {
+        } else if (type == "height") {
           return height;
         }
       }
@@ -33,5 +33,6 @@
         <option value="bruh">bruh.io</option>
         <option value="plumbersCreed">Plumber's Creed</option>
       </select>
+      <br>
       <iframe id="player" width="sizeHandler('width')" height="sizeHandler('height')"></iframe>
     </div>
