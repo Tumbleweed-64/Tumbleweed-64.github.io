@@ -20,3 +20,15 @@ p {
 div {
   text-align: center;
 }
+
+iframe {
+  border: 1px solid white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
