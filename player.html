@@ -11,16 +11,8 @@
           player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-bpuj.ko-");
         } else if (gameList.value == "plumbersCreed") {
           player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-otepbmy%2Civcj.ko-pnuobgrq-argef")
-        } // more soon
-      }
-      
-      function sizeHandler(type) {
-        var width = window.innerWidth - 5;
-        var height = window.innerHeight - 25;
-        if (type == "width") {
-          return width;
-        } else if (type == "height") {
-          return height;
+        } else if (gameList.value == "default") {
+          player.setAttribute("src", "about:blank");
         }
       }
     </script>
