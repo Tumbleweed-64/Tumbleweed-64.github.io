@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function switchGame() {
+        var gameList = document.getElementById("gameList");
+        var player = document.getElementById("player"):
+        if (gameList.value == "driveMad") {
+          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-dpiteoaf.ko-gcmg%2Ffrkvg-oaf%2F");
+        } else if (gameList.value == "bruh") {
+          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-bpuj.ko-");
+        } else if (gameList.value == "plumbersCreed") {
+          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-otepbmy%2Civcj.ko-pnuobgrq-argef")
+        } // more soon
+      }
+      
+      function sizeHandler(type) {
+        var width = window.innerWidth - 5;
+        var height = window.innerHeight - 25;
+        if (type === "width") {
+          return width;
+        } else if (type === "height") {
+          return height;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p><strong>Note:</strong> There will be more games soon, for requests, <a href="mailto:2028940@apps.nsd.org?subject=Game Request">email me</a></p>
+    <div>
+      <select id="gameList">
+        <option value="driveMad">Drive Mad</option>
+        <option value="bruh">bruh.io</option>
+        <option value="plumbersCreed">Plumber's Creed</option>
+      </select>
+      <iframe id="player" width="sizeHandler('width')" height="sizeHandler('height')"></iframe>
+    </div>
