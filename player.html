@@ -1,16 +1,31 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="main.ico">
     <script>
+
       function switchGame() {
         var gameList = document.getElementById("gameList");
         var player = document.getElementById("player");
+        var server = document.getElementById("server");
         if (gameList.value == "driveMad") {
-          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-dpiteoaf.ko-gcmg%2Ffrkvg-oaf%2F");
-        } else if (gameList.value == "bruh") {
-          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-bpuj.ko-");
-        } else if (gameList.value == "plumbersCreed") {
-          player.setAttribute("src", "https://bitter-yaks-wait-40-84-174-96.loca.lt/uv/service/hvtrs8%2F-otepbmy%2Civcj.ko-pnuobgrq-argef")
+          if (server.value == "e7p8") {
+            player.setAttribute("src", "https://echo-website-e7p8.onrender.com/projects/drive-mad/index.html");
+          } else if (server.value == "e6ux") {
+            player.setAttribute("src", "https://echo-website-e6ux.onrender.com/projects/drive-mad/index.html");
+          }
+        } else if (gameList.value == "dogeMiner") {
+          if (server.value == "e7p8") {
+            player.setAttribute("src", "https://echo-website-e7p8.onrender.com/projects/DogeMiner/index.html");
+          } else if (server.value == "e6ux") {
+            player.setAttribute("src", "https://echo-website-e6ux.onrender.com/projects/DogeMiner/index.html");
+          }
+        } else if (gameList.value == "madalinStunt") {
+          if (server.value == "e7p8") {
+            player.setAttribute("src", "https://echo-website-e7p8.onrender.com/projects/madalin-stunt-cars-2/index.html");
+          } else if (server.value == "e6ux") {
+            player.setAttribute("src", "https://echo-website-e6ux.onrender.com/projects/madalin-stunt-cars-2/index.html");
+          }
         } else if (gameList.value == "default") {
           player.setAttribute("src", "about:blank");
         }
@@ -23,8 +38,12 @@
       <select id="gameList" onchange="switchGame()">
         <option value="default">None</option>
         <option value="driveMad">Drive Mad</option>
-        <option value="bruh">bruh.io</option>
-        <option value="plumbersCreed">Plumber's Creed</option>
+        <option value="dogeMiner">Doge Miner</option>
+        <option value="madalinStunt">Madalin Stunt Cars 2</option>
+      </select>
+      <select id="server" onchange="changeLink()">
+        <option value="e7p8">Server 1 (e7p8)</option>
+        <option value="e6ux">Server 2 (e6ux)</option>
       </select>
       <br>
       <iframe id="player" style="width: 100%; height: 100%"></iframe>
