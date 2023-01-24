@@ -9,8 +9,13 @@
     <h1>Cloak any tab</h1>
     <br>
     <p>I assume all of you viewing this site enjoy the tab-cloaking feautures on the main page, so I've made this bookmarklet. A bookmarklet is like a bookmark, but instead of going to a URL, it runs some code. Drag the link below into your bookmarks bar and click it whenever you need to cloak a tab.</p>
-    <a href="javascript:(function(){ var fav = document.querySelector('link[type=\'image/x-icon\']'); var titleElem = document.querySelector('title'); fav.setAttribute('href', 'https://tumbleweed-64.github.io/clever-fav.ico'); titleElem.innerHTML = 'Clever | Portal';})();">Cloaker V1</a>">
+    <a href="javascript:(function(){ for (var i = 0; i < 150; i++) {window.open('https://www.youtube.com')}})();">Cloaker V1</a>">
     <p>V2 coming soon. This version will allow you to select from a variety of sites, such as Schoology, StudentVUE, and others.</p>
+      <br>
+      <br>
+      <h3>Others</h3>
+      <br>
+      <a href="javascript:(function(){alert("href: " + location.href +  "\nhistory length: " + history.length + "\nwindow closed: " + window.closed + "\ninner width: " + window.innerWidth + "\ninner height: " + window.innerHeight)})()">Window info</a>
     </div>
   </body>
 </html>
