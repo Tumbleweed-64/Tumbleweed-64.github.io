@@ -19,16 +19,16 @@
         }
       }
       
-      var engineVal = checkEngine();
-      
       function searchFor() {
+        var engineVal = checkEngine();
         var searchBox = document.getElementById("searchBox");
-        var fullSearch = engineVal + searchBox.value;
+        var fullSearch = String(engineVal) + searchBox.value;
         window.location.href = fullSearch;
       }
     </script>
   </head>
   <body>
+    <div>
     <label for="engine">Select search engine: </label>
     <select id="selEngine" oninput="checkEngine();">
       <option value="google">(default) Google</option>
@@ -51,3 +51,6 @@
     <hr>
     <p>By <a href="https://github.com/Tumbleweed-64">Tumbleweed-64</a> on GitHub</p>
     <a href="main.html">Back to the main page</a>
+    </div>
+  </body>
+</html>
