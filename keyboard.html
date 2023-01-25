@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cursed Keyboard</title>
+<script>
+var shift = "off";
+var text = document.getElementById("text");
+text.setAttribute("cols", "100")
+function clearText() {
+  text = document.getElementById("text");
+  text.innerHTML = "";
+}
+
+function copyText() {
+  var text = document.getElementById("text");
+  text.select();
+  navigator.clipboard.writeText(text.value)
+}
+
+function addChar(letter ,shiftVal) {
+if (shift === "on") {
+letter.toUpperCase();
+text.innerHTML += letter;
+return letter;
+} else if (shift === "off") {
+text.innerHTML += letter;
+return letter;
+}
+}
+
+var prevChar = addChar("", shift);
+
+function deleteChar() {
+var text = document.getElementById("text");
+text.innerHTML -= prevChar;
+}
+</script>
+</head>
+<body>
+<div id="text-container">
+<button onclick="copyText()">Copy text</button>
+<button onclick="clearText()">Clear</button>
+<br>
+<textarea rows="10" readonly id="text"></textarea>
+</div>
+<br>
+<div id="keys">
+<button onclick="addChar('q', shift)">q</button>
+<button onclick="addChar('w', shift)">w</button>
+<button onclick="addChar('e', shift)">e</button>
+<button onclick="addChar('r', shift)">r</button>
+<button onclick="addChar('t', shift)">t</button>
+<button onclick="addChar('y', shift)">y</button>
+<button onclick="addChar('u', shift)">u</button>
+<button onclick="addChar('i', shift)">i</button>
+<button onclick="addChar('o', shift)">o</button>
+<button onclick="addChar('p', shift)">p</button>
+<br>
+<button onclick="addChar('a', shift)">a</button>
+<button onclick="addChar('s', shift)">s</button>
+<button onclick="addChar('d', shift)">d</button>
+<button onclick="addChar('f', shift)">f</button>
+<button onclick="addChar('g', shift)">g</button>
+<button onclick="addChar('h', shift)">h</button>
+<button onclick="addChar('j', shift)">j</button>
+<button onclick="addChar('k', shift)">k</button>
+<button onclick="addChar('l', shift)">l</button>
+<br>
+<button onclick="addChar('z', shift)">z</button>
+<button onclick="addChar('x', shift)">x</button>
+<button onclick="addChar('c', shift)">c</button>
+<button onclick="addChar('v', shift)">v</button>
+<button onclick="addChar('b', shift)">b</button>
+<button onclick="addChar('n', shift)">n</button>
+<button onclick="addChar('m', shift)">m</button>
+<br>
+<button onclick="addChar(' ');">[ SPACE ]</button>
+</div>
+</body>
+</html>
