@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Loogie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="main.ico">
+    <script>
+      function checkEngine() {
+        var selEngine = document.getElementById("selEngine");
+        var engineString = "";
+        if (selEngine.value == "google") {
+          engineString = "https://www.google.com/search?q=";
+          return engineString;
+        } else if (selEngine.value == "ddg") {
+          engineString = "https://duckduckgo.com/?q=";
+          return engineString;
+        } else if (selEngine.value == "bing") {
+          engineString = "https://bing.com/search?q=";
+          return engineString;
+        }
+      }
+      
+      var engineVal = checkEngine();
+      
+      function searchFor() {
+        var searchBox = document.getElementById("searchBox");
+        var fullSearch = engineVal + searchBox.value;
+        window.location.href = fullSearch;
+      }
+    </script>
+  </head>
+  <body>
+    <label for="engine">Select search engine: </label>
+    <select id="selEngine" oninput="checkEngine();">
+      <option value="google">(default) Google</option>
+      <option value="ddg">DuckDuckGo</option>
+      <option value="bing">Bing</option>
+    </select>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>Loogie</h1>
+    <p>The world's goofiest search engine</p>
+    <br>
+    <br>
+    <div style="display: inline;">
+      <input type="text" id="searchBox">
+      <button onclick="searchFor();">Go!</button>
+    </div>
+    <br>
+    <hr>
+    <p>By <a href="https://github.com/Tumbleweed-64">Tumbleweed-64</a> on GitHub</p>
+    <a href="main.html">Back to the main page</a>
