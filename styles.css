@@ -25,6 +25,14 @@ iframe {
   border: 1px solid white;
 }
 
+hr {
+  border: 1px solid white;
+}
+
+label {
+  color: white;
+}
+
 a:link {
   color: white;
   text-decoration: none;
@@ -32,8 +40,4 @@ a:link {
 
 a:hover {
   text-decoration: underline;
-}
-
-hr {
-  border: 1px solid white;
 }
