@@ -1,3 +1,4 @@
+// stuff for main page, mainly tab-cloaking
 function getSelectVal() {
   var cloakOps = document.getElementById("cloakOps");
   var titleElem = document.getElementById("titleElem");
