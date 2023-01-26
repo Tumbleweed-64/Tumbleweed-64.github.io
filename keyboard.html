@@ -4,16 +4,10 @@
 <title>Cursed Keyboard</title>
 <script>
 var shift = "off";
-
+// huh thought shift feature would work, leaving it all here in case I figure something out
 function clearText() {
   text = document.getElementById("text");
   text.innerHTML = "";
-}
-
-function copyText() {
-  var text = document.getElementById("text");
-  text.select();
-  navigator.clipboard.writeText(text.value)
 }
 
 function addChar(letter ,shiftVal) {
@@ -25,13 +19,6 @@ return letter;
 text.innerHTML += letter;
 return letter;
 }
-}
-
-var prevChar = addChar("", shift);
-
-function deleteChar() {
-var text = document.getElementById("text");
-text.innerHTML -= prevChar;
 }
 </script>
 <link rel="stylesheet" href="styles.css">
