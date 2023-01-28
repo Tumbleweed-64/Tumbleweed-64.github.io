@@ -21,5 +21,19 @@ function checkCode() {
     alert('You\'re in.'); 
     window.location.href = 'main.html';
   } else { 
-    alert('Wrong code. Try again.') }
+    alert('Wrong code. Try again.'); }
 }
+
+function adminLogin() {
+  var adminUsername = "Tumbleweed-64";
+  var adminPW = "1t$@m3m@r10";
+  var prmptusrnm = prompt("Enter username: ");
+  var prmptPW = prompt("Enter password: ")
+  if ((prmptusrnm === adminUsername) && (prmptPW === adminPW)) {
+    window.location.href = "main.html"
+  } else {
+    alert("Nice try!")
+  }
+}
+
+  
