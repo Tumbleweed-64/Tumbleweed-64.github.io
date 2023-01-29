@@ -2,8 +2,8 @@ var cps = 0;
 
 function buttonShrink() {
   var clickBtn = document.getElementById("clickBtn");
-  clickBtn.width -= (clickBtn.style.width * 0.5);
-  clickBtn.height -= (clickBtn.style.height * 0.5);
+  clickBtn.style.width -= (clickBtn.style.width * 0.5);
+  clickBtn.style.height -= (clickBtn.style.height * 0.5);
 }
 
 function buttonGrow() {
