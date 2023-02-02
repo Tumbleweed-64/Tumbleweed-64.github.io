@@ -38,6 +38,11 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
 }
