@@ -1,0 +1,1 @@
+Hi. GitHub wants me to put a README here, but I'm sure you know what this is. It's my github.io site, where I'll put various projects and stuff like that. It's not done yet, but I hope it will look good.
