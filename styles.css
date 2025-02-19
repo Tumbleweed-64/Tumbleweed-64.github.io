@@ -1,0 +1,14 @@
+@font-face {
+		font-family: BakBakOne;
+		src: url("./BakbakOne-Regular.ttf");
+}
+
+body {
+		background-color: #1e1c1c;
+		color: #2c8c0f;
+		text-align: center;
+}
+
+h1 {
+		font-family: BakBakOne;
+}
